@@ -1,0 +1,11 @@
+@reference "tailwindcss";
+
+.container {
+  @apply w-full flex flex-wrap items-center justify-center mt-8;
+}
+.card {
+  @apply w-full h-18 bg-[var(--card)] rounded-[10px] m-1.5 py-1 flex items-center justify-between sm:w-1/2;
+}
+.card div {
+  @apply bg-[var(--maincolor)] h-full rounded-[5px] w-1/4 mx-1 flex flex-col items-center justify-evenly cursor-pointer;
+}

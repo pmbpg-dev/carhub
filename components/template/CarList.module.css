@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.container {
+  @apply w-full my-4 px-4;
+}
+
+.cards {
+  @apply px-16 py-4 flex flex-wrap justify-around m-auto;
+}

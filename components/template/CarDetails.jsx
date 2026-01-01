@@ -44,7 +44,7 @@ export default function CarDetails({
         <div>
           <Road />
           <p>kms driven</p>
-          <span>{distance}</span>
+          <span>{Number(distance)?.toLocaleString()}</span>
         </div>
       </Surface>
       <Surface variant="secondary" className={css.details}>
@@ -62,7 +62,7 @@ export default function CarDetails({
         <div className={css.price}>
           <Money />
           <p>Price</p>
-          <span>$ {price}</span>
+          <span>$ {price?.toLocaleString()}</span>
         </div>
       </Surface>
       <Button>Buy</Button>
