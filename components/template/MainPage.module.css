@@ -1,0 +1,35 @@
+@reference "tailwindcss";
+
+.container {
+  @apply flex flex-col sm:flex-row items-center justify-evenly sm:justify-between pt-3 sm:pl-8 h-dvh;
+}
+.mainText {
+  @apply sm:w-2/6 text-center sm:text-left;
+}
+.mainText h1 {
+  @apply sm:text-3xl mb-4 font-bold;
+}
+.mainText p {
+  @apply text-[var(--maincolor)] mb-8 text-[0.8rem] sm:text-[1rem];
+}
+.mainText a {
+  @apply bg-[var(--maincolor)] px-5 py-2 rounded-[5px] text-white;
+  /* background: linear-gradient(180deg, #efefef 20%, #565656 50%, #93b3ae 100%); */
+  /* padding: 4px;
+  border-radius: 50px;
+  width: 50%;
+  justify-content: center;
+  box-shadow: 0 6px 15px #cecece;
+  transition: all ease-in 0.3s; */
+}
+/* .mainText a p {
+  background: linear-gradient(180deg, #c9c9c9 20%, #909391ae 50%, #abc9c4 100%);
+} */
+.image {
+  border-radius: 97% 0% 14% 20% / 71% 25% 0% 29%;
+  @apply w-full h-2/3 sm:w-3/6 sm:h-3/4 bg-[var(--maincolor)] flex justify-center items-center relative;
+}
+
+.image img {
+  @apply w-full absolute sm:right-20 drop-shadow-2xl;
+}

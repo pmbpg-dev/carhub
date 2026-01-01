@@ -1,0 +1,39 @@
+@reference "tailwindcss";
+
+.container {
+  @apply p-2 bg-[var(--card)] rounded-[5px]  my-6 flex flex-col justify-evenly hover:shadow-2xl cursor-pointer overflow-visible;
+  animation: fadeUp 0.1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.container img {
+  @apply rounded-[5px];
+}
+.title {
+  @apply font-bold mt-2;
+}
+.detail {
+  @apply opacity-70 mt-2 text-[12px];
+}
+.footer {
+  @apply flex justify-between mt-3;
+}
+.price {
+  @apply py-1 px-3 bg-[var(--maincolor)]  text-white;
+}
+.location {
+  @apply flex items-center;
+}
+
+@keyframes fadeUp {
+  from {
+    filter: blur(15px);
+    opacity: 0;
+    transform: translateY(40px) scale(0.5);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

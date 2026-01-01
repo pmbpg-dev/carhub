@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.container {
+  @apply px-16 py-4 flex flex-wrap justify-around m-auto;
+}

@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+
+.container {
+  @apply w-full flex flex-col items-center my-5 p-5;
+}
+.container img {
+  @apply rounded-[10px] sm:w-1/2;
+}
+.details {
+  @apply w-full bg-[var(--card)] rounded-[10px] m-1.5 p-4 flex flex-col sm:w-1/2;
+}
+.details div {
+  @apply w-full flex items-center relative;
+}
+.details div p {
+  @apply ml-1;
+}
+.details div span {
+  @apply absolute right-0;
+}
+.container h3 {
+  @apply text-xl font-bold my-5;
+}
+.details h3 {
+  @apply mt-0;
+}
+.container button {
+  @apply w-full rounded-[10px] bg-[var(--maincolor)] sm:w-1/2;
+}
